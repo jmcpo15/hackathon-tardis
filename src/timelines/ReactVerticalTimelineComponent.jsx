@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import iplayerLogo from '../productLogos/iplayer.svg';
@@ -8,6 +9,19 @@ import bitesizeLogo from '../productLogos/bitesize.svg';
 
 function Logo(logo) {
   return (<img src={logo} alt="logo" />);
+}
+
+function player(content) {
+  if ('videoUrl' in content) {
+    return <ReactPlayer
+      url={content.videoUrl}
+      controls
+      width='265px'
+      height='150px'
+    />
+  } else {
+    return null
+  }
 }
 
 const timelineContent = [
@@ -20,6 +34,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
   },
   {
     title: 'England Win the World Cup',
@@ -105,6 +120,7 @@ const generateTimelineBlocks = (tlContent) => tlContent.map((content, index) => 
   >
     <h3 className="vertical-timeline-element-title">{content.title}</h3>
     <h4 className="vertical-timeline-element-subtitle">{content.subTitle}</h4>
+    <p>{player(content)}</p>
     <p>
       {content.bodyText}
     </p>
