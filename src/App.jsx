@@ -5,18 +5,22 @@ import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation
 import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 // import logo from './logo.svg';
 import './App.css';
-import ReactVerticalTimelineComponent from './timelines/ReactVerticalTimelineComponent';
-// import { timelineContent } from './contentData/initialDummyData';
+import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
 import { erasContent } from './contentData/erasContent';
-import { decadesContent } from './contentData/decadesContent';
+import {dinosaursBreakdown, sixtysBreakdown} from './contentData/eraBreakdownContent'
+
+const eraBreakdowns = {
+  'The Dinosaurs': dinosaursBreakdown,
+  'Sixtys': sixtysBreakdown
+}
 
 function TimelineWrapper(props) {
-  const { type, clickHandler } = props;
-
+  const { type, era, clickHandler } = props;
   if (type === 'eras') {
-    return (<ReactVerticalTimelineComponent inputData={erasContent} clickHandler={clickHandler} />);
-  } if (type === 'decades') {
-    return (<ReactVerticalTimelineComponent inputData={decadesContent} clickHandler={clickHandler} />);
+    return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
+  }
+  if (type === 'eraBreakdown') {
+    return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler} />);
   }
   return <> </>;
 }
@@ -24,16 +28,20 @@ function TimelineWrapper(props) {
 TimelineWrapper.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   type: PropTypes.string.isRequired,
+  era: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
 };
 
 function App() {
   const [currentType, setCurrentType] = useState('eras');
+  const [selectedEra, setSelectedEra] = useState('The Dinosaurs')
 
-  const handleClick = () => {
-    console.log('clickHandler clicked');
-    if (currentType === 'eras') setCurrentType('decades');
-    if (currentType === 'decades') setCurrentType('eras');
+  const handleClick = (era, back) => {
+    if (currentType === 'eras') { 
+      setCurrentType('eraBreakdown')
+      setSelectedEra(era)
+    };
+    if (currentType === 'eraBreakdown' || back) setCurrentType('eras');
   };
 
   return (
@@ -64,7 +72,7 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
-          <TimelineWrapper type={currentType} clickHandler={handleClick} />
+            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} />
         </div>
         <div className="sideBody" />
       </div>
