@@ -201,3 +201,8 @@
     transform: scale(1);
   }
 }
+
+.contentLink {
+  /* margin: 1rem; */
+  padding: 2rem;
+}

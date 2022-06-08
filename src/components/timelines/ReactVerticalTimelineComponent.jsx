@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import MediaHolder from '../MediaHolder';
 import Logo from '../../helpers/logoGenerator';
 
-const generateTimelineBlocks = (tlContent, type, clickHandler) => tlContent.map((content, index) => {
+const generateTimelineBlocks = (tlContent, type, clickHandler, modalState, modalHandler) => tlContent.map((content, index) => {
 
   if (type === 'era') {
     return (
@@ -35,13 +35,11 @@ const generateTimelineBlocks = (tlContent, type, clickHandler) => tlContent.map(
         className="vertical-timeline-element--work"
         contentStyle={content.contentStyle}
         contentArrowStyle={content.contentArrowStyle}
-        // date={content.date}
         iconStyle={content.iconStyle}
         icon={content.icon ? Logo(content.icon) : ''}
-        // onTimelineElementClick={() => clickHandler()}
       >
         <h3 className="mediaHolderTitle">{content.title}</h3>
-        <MediaHolder inputData={content.mediaBlocksData}/>
+        <MediaHolder inputData={content.mediaBlocksData} modalState={modalState} clickHandler={modalHandler}/>
       </VerticalTimelineElement>
     )
   }
@@ -51,7 +49,7 @@ const generateTimelineBlocks = (tlContent, type, clickHandler) => tlContent.map(
 
 
 export default function ReactVerticalTimelineComponent(props) {
-  const { inputData, type, era, clickHandler } = props;
+  const { inputData, type, era, clickHandler, modalState, modalHandler } = props;
   return (
     <>
     {era && 
@@ -60,7 +58,7 @@ export default function ReactVerticalTimelineComponent(props) {
         <h2>{era}</h2>
       </div>}
     <VerticalTimeline lineColor="#000" animate layout="1-column-left">
-      {generateTimelineBlocks(inputData, type, clickHandler)}
+      {generateTimelineBlocks(inputData, type, clickHandler, modalState, modalHandler)}
     </VerticalTimeline>
     </>
   );
@@ -72,4 +70,6 @@ ReactVerticalTimelineComponent.propTypes = {
   type: PropTypes.string.isRequired,
   era: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
+  modalState: PropTypes.bool.isRequired,
+  modalHandler: PropTypes.func.isRequired,
 };
