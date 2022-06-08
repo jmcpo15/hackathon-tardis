@@ -1,27 +1,10 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
-import PropTypes from 'prop-types';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import iplayerLogo from '../productLogos/iplayer.svg';
+import soundsLogo from '../productLogos/sounds.svg';
+import newsLogo from '../productLogos/news.svg';
+import bitesizeLogo from '../productLogos/bitesize.svg';
 
-function Logo(logo) {
-  return (<img src={logo} alt="logo" />);
-}
-
-function player(content) {
-  if ('videoUrl' in content) {
-    return <ReactPlayer
-      url={content.videoUrl}
-      controls
-      width='265px'
-      height='150px'
-    />
-  } else {
-    return null
-  }
-}
-
-const timelineContent = [
+// eslint-disable-next-line import/prefer-default-export
+export const timelineContent = [
   {
     title: 'The Dinosaurs',
     subTitle: 'BBC iPlayer',
@@ -31,7 +14,6 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
-    videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
   },
   {
     title: 'England Win the World Cup',
@@ -104,38 +86,3 @@ const timelineContent = [
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
   },
 ];
-
-const generateTimelineBlocks = (tlContent, clickHandler) => tlContent.map((content, index) => (
-  <VerticalTimelineElement
-    key={`${index + 5}-${content.title}`}
-    className="vertical-timeline-element--work"
-    contentStyle={content.contentStyle}
-    contentArrowStyle={content.contentArrowStyle}
-    date={content.date}
-    iconStyle={content.iconStyle}
-    icon={Logo(content.icon)}
-    onTimelineElementClick={() => clickHandler()}
-  >
-    <h3 className="vertical-timeline-element-title">{content.title}</h3>
-    <h4 className="vertical-timeline-element-subtitle">{content.subTitle}</h4>
-    <p>{player(content)}</p>
-    <p>
-      {content.bodyText}
-    </p>
-  </VerticalTimelineElement>
-));
-
-export default function ReactVerticalTimelineComponent(props) {
-  const { inputData, clickHandler } = props;
-  return (
-    <VerticalTimeline lineColor="#000" animate layout="1-column-left">
-      {generateTimelineBlocks(inputData, clickHandler)}
-    </VerticalTimeline>
-  );
-}
-
-ReactVerticalTimelineComponent.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  inputData: PropTypes.any.isRequired,
-  clickHandler: PropTypes.func.isRequired,
-};
