@@ -5,9 +5,23 @@ import iplayerLogo from '../productLogos/iplayer.svg';
 import soundsLogo from '../productLogos/sounds.svg';
 import newsLogo from '../productLogos/news.svg';
 import bitesizeLogo from '../productLogos/bitesize.svg';
+import ReactPlayer from 'react-player';
 
 function Logo(logo) {
   return (<img src={logo} alt="logo" />);
+}
+
+function player(content) {
+  if ('videoUrl' in content) {
+    return <ReactPlayer
+      url={content.videoUrl}
+      controls
+      width='265px'
+      height='150px'
+    />
+  } else {
+    return null
+  }
 }
 
 const timelineContent = [
@@ -20,6 +34,8 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4',
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'England Win the World Cup',
@@ -30,6 +46,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'The Dinosaurs',
@@ -40,6 +57,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'England Win the World Cup',
@@ -50,6 +68,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'The Dinosaurs',
@@ -60,6 +79,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'England Win the World Cup',
@@ -70,6 +90,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'The Dinosaurs',
@@ -80,6 +101,7 @@ const timelineContent = [
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
     contentStyle: { background: '#eeeeee', color: '#000' },
     contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+    thumbnail: 'https://ichef.bbci.co.uk/images/ic/1184x666/p0bz9zcl.jpg',
   },
   {
     title: 'England Win the World Cup',
@@ -105,12 +127,64 @@ const generateTimelineBlocks = (tlContent) => tlContent.map((content, index) => 
   >
     <h3 className="vertical-timeline-element-title">{content.title}</h3>
     <h4 className="vertical-timeline-element-subtitle">{content.subTitle}</h4>
+    <div><CarouselEntry videoUrl={content.videoUrl} thumbnail={content.thumbnail}/></div>
     <p>
       {content.bodyText}
     </p>
   </VerticalTimelineElement>
 ));
 
+const openModal = () => {
+  console.log("Open Modal")
+}
+
+class CarouselEntry extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      'showVideo': false,
+      // 'swollen': false
+    }
+  }
+
+  handleClick = (e) => {
+    this.setState({'showVideo': true});
+  }
+
+  // handleMouseOver = (e) => {
+  //   this.setState({'swollen': true});
+  // }
+
+  // handleMouseOut = (e) => {
+  //   this.setState({'swollen': false});
+  // }
+
+  render() {
+    if (!this.state.showVideo) {
+      return <div className={'thumbnail'/* + (this.state.swollen ? ' swollen' : '')*/}
+        onClick={this.handleClick}
+        // onMouseOver={this.handleMouseOver}
+        // onMouseOut={this.handleMouseOut}
+        ><img src={this.props.thumbnail}/></div>
+    } else {
+      if (this.props.videoUrl == null) {
+        console.log("no video url");
+      } else {
+        return (
+          <div className='player'>
+            <ReactPlayer
+              url={this.props.videoUrl}
+              controls
+              width='265px'
+              height='150px'
+            />
+          </div>
+        )
+      }
+    }
+  }
+}
+  
 export default function ReactVerticalTimelineComponent() {
   return (
     <VerticalTimeline lineColor="#000" animate layout="1-column-left">

@@ -66,3 +66,21 @@
   min-height: 1080px;
 
 }
+
+.thumbnail {
+  /* color: white;
+  background-color: darkblue; */
+  height: 150px;
+}
+
+.thumbnail:hover {
+  font-size: xx-large;
+  height: 250px;
+}
+
+.thumbnail img {
+  height: 100%
+}
+/* .swollen {
+  font-size: x-large;
+} */
