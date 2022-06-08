@@ -18,13 +18,15 @@ export const dinosaursBreakdown = [
         background: '',
         productLogo: bitesizeLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
       },
       {
         background: '',
         productLogo: iplayerLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
       },
       {
         background: '',
@@ -42,13 +44,15 @@ export const dinosaursBreakdown = [
         background: '',
         productLogo: bitesizeLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
       },
       {
         background: '',
         productLogo: iplayerLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
       },
       {
         background: '',
@@ -75,13 +79,15 @@ export const dinosaursBreakdown = [
         background: '',
         productLogo: bitesizeLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
       },
       {
         background: '',
         productLogo: iplayerLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
       },
       {
         background: '',
@@ -99,13 +105,15 @@ export const dinosaursBreakdown = [
         background: '',
         productLogo: bitesizeLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
       },
       {
         background: '',
         productLogo: iplayerLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
       },
       {
         background: '',
@@ -138,7 +146,8 @@ export const dinosaursBreakdown = [
         background: '',
         productLogo: iplayerLogo,
         title: 'content...',
-        image: ''
+        image: '',
+        videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
       },
       {
         background: '',

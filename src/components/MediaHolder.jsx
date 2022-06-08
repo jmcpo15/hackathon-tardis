@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from "../components/modal/Modal";
 import PropTypes from 'prop-types';
 import Logo from '../helpers/logoGenerator';
 
@@ -9,7 +8,7 @@ const generateMediaCards = (mediaCards, modalState, clickHandler) => mediaCards.
     className="mediaCard bounceAnim"
     style={{animationDelay: `${index / 10}s`, animationDuration: '1s'}}
     image={card.image}
-    onClick={() => clickHandler(true)}
+    onClick={() => clickHandler(true, {videoUrl: card?.videoUrl || null, contentUrl: card?.contentUrl || null})}
   >
     <h3 className="">{card.title}</h3>
     <h4 className="">{card.subTitle}</h4>
@@ -18,9 +17,7 @@ const generateMediaCards = (mediaCards, modalState, clickHandler) => mediaCards.
       {card.bodyText}
     </p>
 
-    <Modal title="My Modal" onClose={() => clickHandler(false)} show={modalState}>
-      <p>This is modal body</p>
-    </Modal>
+
   </div>
 ));
 

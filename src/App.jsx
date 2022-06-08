@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactPlayer from 'react-player';
+import Modal from "./components/modal/Modal";
 import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
 import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 // import logo from './logo.svg';
@@ -38,9 +40,11 @@ function App() {
   const [currentType, setCurrentType] = useState('eras');
   const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
   const [modalShow, setModalShow] = useState(false);
+  const [modalContent, setModalContent] = useState('no modal content');
 
-  const modalHandler = () => {
-    setModalShow(!modalShow);
+  const modalHandler = (newModalState, newModalContent) => {
+    setModalContent(newModalContent);
+    setModalShow(newModalState);
   };
 
   const handleClick = (era, back) => {
@@ -50,7 +54,7 @@ function App() {
     };
     if (currentType === 'eraBreakdown' || back) setCurrentType('eras');
   };
-
+  
   return (
     <div className="App">
       <header role="banner">
@@ -83,6 +87,30 @@ function App() {
         </div>
         <div className="sideBody" />
       </div>
+
+      <Modal title="My Modal" onClose={() => modalHandler(false, {videoUrl: null, contentUrl: null})} show={modalShow}>
+          {
+            modalContent.videoUrl &&
+              <ReactPlayer
+                url={modalContent.videoUrl}
+                controls
+                width='auto'
+                height='auto'
+              />
+          }
+
+          {
+            modalContent.contentUrl &&
+              <div className='contentLink'>
+                <a href={`${modalContent.contentLink}`} target="_blank" rel="noreferrer">Go to content {modalContent.contentLink}</a>
+              </div>
+          }
+
+          {
+            !modalContent.videoUrl && !modalContent.contentUrl && 'no content'
+          }
+
+          </Modal>
 
     </div>
   );

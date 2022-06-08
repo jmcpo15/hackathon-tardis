@@ -23,10 +23,12 @@
 }
 
 .modal-content {
-  width: 500px;
+  width: auto;
+  height: auto;
+  /* width: 500px; */
   background-color: #fff;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-200px);
+  /* transform: translateY(-200px); */
 }
 
 .modal.enter-done .modal-content {
@@ -39,7 +41,7 @@
 
 .modal-header,
 .modal-footer {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .modal-title {
@@ -47,7 +49,24 @@
 }
 
 .modal-body {
-  padding: 10px;
+  /* padding: 10px;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee; */
+}
+
+.modal-body > button {
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  border: none;
+  float: right;
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 4;
+  margin: 0.5rem;
+  height: auto;
+  width: auto;
+  border-radius: 3px;
 }

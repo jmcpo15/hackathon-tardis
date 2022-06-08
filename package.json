@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.5.2",
     "react-transition-group": "4.4.1",
+    "react-player": "^2.10.1",
     "web-vitals": "^2.1.4",
     "prop-types": "^15.8.1"
   },
