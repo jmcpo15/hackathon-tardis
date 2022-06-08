@@ -15,12 +15,12 @@ const eraBreakdowns = {
 }
 
 function TimelineWrapper(props) {
-  const { type, era, clickHandler } = props;
+  const { type, era, clickHandler, modalState, modalHandler } = props;
   if (type === 'eras') {
     return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
   }
   if (type === 'eraBreakdown') {
-    return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler} />);
+    return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
   }
   return <> </>;
 }
@@ -30,11 +30,18 @@ TimelineWrapper.propTypes = {
   type: PropTypes.string.isRequired,
   era: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
+  modalState: PropTypes.bool.isRequired,
+  modalHandler: PropTypes.func.isRequired,
 };
 
 function App() {
   const [currentType, setCurrentType] = useState('eras');
-  const [selectedEra, setSelectedEra] = useState('The Dinosaurs')
+  const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
+  const [modalShow, setModalShow] = useState(false);
+
+  const modalHandler = () => {
+    setModalShow(!modalShow);
+  };
 
   const handleClick = (era, back) => {
     if (currentType === 'eras') { 
@@ -72,7 +79,7 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
-            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} />
+            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} />
         </div>
         <div className="sideBody" />
       </div>
