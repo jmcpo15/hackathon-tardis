@@ -1,6 +1,6 @@
 import React from 'react';
-import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
-import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
+// import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
+// import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 // import logo from './logo.svg';
 import './App.css';
 import ReactVerticalTimelineComponent from './timelines/ReactVerticalTimelineComponent';
@@ -12,13 +12,7 @@ function App() {
         <div className="wrapper">
           <div className="sideHeader" />
           <div className="middleHeader">
-            <NavigationHeader
-              leftChildren={[
-                <div className={navigationHeaderItemClass} href="#" mdxType="a" originalType="a"><div mdxType="span" originalType="span">T.A.R.D.I.S.</div></div>,
-              ]}
-              rightChildren={[
-              ]}
-            />
+            <h1>Navigation bar would be here....</h1>
           </div>
           <div className="sideHeader" />
         </div>
