@@ -9,11 +9,13 @@ import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 import './App.css';
 import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
 import { erasContent } from './contentData/erasContent';
-import {dinosaursBreakdown, sixtysBreakdown} from './contentData/eraBreakdownContent'
+import {prehistoricBreakdown, eighteenBreakdown, nineteenBreakdown, futureBreakdown} from './contentData/eraBreakdownContent'
 
 const eraBreakdowns = {
-  'The Dinosaurs': dinosaursBreakdown,
-  'Sixtys': sixtysBreakdown
+  'Prehistoric': prehistoricBreakdown,
+  '1800s': eighteenBreakdown,
+  '1900s': nineteenBreakdown,
+  'Future': futureBreakdown
 }
 
 function TimelineWrapper(props) {
@@ -22,6 +24,7 @@ function TimelineWrapper(props) {
     return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
   }
   if (type === 'eraBreakdown') {
+    console.log(era)
     return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
   }
   return <> </>;
@@ -38,7 +41,7 @@ TimelineWrapper.propTypes = {
 
 function App() {
   const [currentType, setCurrentType] = useState('eras');
-  const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
+  const [selectedEra, setSelectedEra] = useState('Prehistoric');
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('no modal content');
 

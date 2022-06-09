@@ -13,19 +13,35 @@ const baseFields = {
 // eslint-disable-next-line import/prefer-default-export
 export const erasContent = [
   {
-    title: 'The Dinosaurs',
-    eraData: 'dinosaursBreakdown',
+    title: 'Prehistoric',
+    eraData: 'prehistoricBreakdown',
     subTitle: '',
     bodyText: 'The Dinosaurs are a group of ancient, non-human dinosaurs that lived in the late Jurassic period of the Cretaceous period. They were the first group of animals to exist in the world.',
     date: '300 million BC - 50 million BC',
     ...baseFields
   },
   {
-    title: 'Sixtys',
-    eraData: 'sixtysBreakdown',
+    title: '1800s',
+    eraData: 'eighteenBreakdown',
     subTitle: '',
-    bodyText: 'The sixtys were a vibrant era!',
-    date: '1960 - 1969',
+    bodyText: 'The Dinosaurs are a group of ancient, non-human dinosaurs that lived in the late Jurassic period of the Cretaceous period. They were the first group of animals to exist in the world.',
+    date: '1820-1850',
     ...baseFields
-  }
+  },
+  {
+    title: '1900s',
+    eraData: 'nineteenBreakdown',
+    subTitle: '',
+    bodyText: 'The Dinosaurs are a group of ancient, non-human dinosaurs that lived in the late Jurassic period of the Cretaceous period. They were the first group of animals to exist in the world.',
+    date: '1960-1970',
+    ...baseFields
+  },
+  {
+    title: 'Future',
+    eraData: 'futureBreakdown',
+    subTitle: '',
+    bodyText: 'The Dinosaurs are a group of ancient, non-human dinosaurs that lived in the late Jurassic period of the Cretaceous period. They were the first group of animals to exist in the world.',
+    date: 'Future',
+    ...baseFields
+  },
 ];

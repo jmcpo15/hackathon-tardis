@@ -13,11 +13,9 @@ const generateMediaCards = (mediaCards, modalState, clickHandler) => mediaCards.
     <h3 className="">{card.title}</h3>
     <h4 className="">{card.subTitle}</h4>
     <div className='cardLogo'>{card.productLogo ? Logo(card.productLogo) : ''}</div>
-    <p>
+    <p className='bodyText'>
       {card.bodyText}
     </p>
-
-
   </div>
 ));
 
