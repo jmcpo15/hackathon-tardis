@@ -3,6 +3,13 @@ import soundsLogo from '../productLogos/sounds.svg';
 import newsLogo from '../productLogos/news.svg';
 import bitesizeLogo from '../productLogos/bitesize.svg';
 
+const baseFields = {
+  icon: '',
+  iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
+  contentStyle: { background: '#fff', color: '#000' },
+  contentArrowStyle: { borderRight: '7px solid  #eee' },
+}
+
 // eslint-disable-next-line import/prefer-default-export
 export const dinosaursBreakdown = [
   {
@@ -61,10 +68,7 @@ export const dinosaursBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '200 million years ago',
@@ -122,10 +126,7 @@ export const dinosaursBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '100 million years ago',
@@ -180,10 +181,7 @@ export const dinosaursBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '50 million years ago',
@@ -237,10 +235,7 @@ export const dinosaursBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   }
 ];
 
@@ -297,10 +292,7 @@ export const sixtysBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '1962',
@@ -354,10 +346,7 @@ export const sixtysBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '1964',
@@ -411,10 +400,7 @@ export const sixtysBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '1966',
@@ -468,10 +454,7 @@ export const sixtysBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   },
   {
     title: '1968',
@@ -525,9 +508,6 @@ export const sixtysBreakdown = [
         image: ''
       }
     ],
-    icon: '',
-    iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-    contentStyle: { background: '#fff', color: '#000' },
-    contentArrowStyle: { borderRight: '7px solid  #eee' },
+    ...baseFields
   }
 ];
