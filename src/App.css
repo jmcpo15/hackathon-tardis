@@ -67,11 +67,36 @@
 
 }
 
-.eraTitle {
+.eraBreakdownTitle {
   text-align: left;
   margin: 1rem auto;
   width: 100%;
   padding: 0 3rem;
+}
+
+.eraBreakdownTitle > * {
+  display: inline-block;
+}
+
+.eraBreakdownTitle > button {
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  font-size: 2em;
+}
+
+.eraBreakdownTitle > h2 {
+  margin: 1rem 1rem 0 0;
+}
+
+
+.eraTitle {
+  text-align: left;
+  /* margin: 1rem auto; */
+  width: 100%;
+  /* padding: 0 3rem; */
 }
 
 .eraTitle > * {
@@ -87,26 +112,16 @@
   font-size: 2em;
 }
 
-  /* background-color: #000;
-  opacity: 0.5;
-  color: #fff;
-  border: none;
-  float: right;
-  font-weight: bold;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 4;
-  margin: 0.5rem;
-  height: auto;
-  width: auto;
-  border-radius: 3px; */
-/* } */
-
-
-
 .eraTitle > h2 {
   margin: 1rem 1rem 0 0;
+  color: #fff;
+}
+
+.eraTitleH2{
+  margin: 0rem 1rem 0 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .mediaCard {

@@ -5,14 +5,17 @@ import bitesizeLogo from '../productLogos/bitesize.svg';
 
 const baseFields = {
   icon: '',
-  iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-  contentStyle: { background: '#eeeeee', color: '#000' },
-  contentArrowStyle: { borderRight: '7px solid  #eeeeee' },
+  iconStyle: { background: '#fff', color: '#eee' },
+  contentStyle: { background: '#000', color: '#fff', margin: '0 0 4em 4em' },
+  contentArrowStyle: { borderRight: '7px solid  #fff' },
 }
+
+const baseMediaPanelsUrl = 'https://d3dqcjzalk876k.cloudfront.net/eraPanels/';
 
 // eslint-disable-next-line import/prefer-default-export
 export const erasContent = [
   {
+    background: `${baseMediaPanelsUrl}Prehistoric.png`,
     title: 'Prehistoric',
     eraData: 'prehistoricBreakdown',
     subTitle: '',
@@ -21,6 +24,7 @@ export const erasContent = [
     ...baseFields
   },
   {
+    background: `${baseMediaPanelsUrl}1800s.png`,
     title: '1800s',
     eraData: 'eighteenBreakdown',
     subTitle: '',
@@ -29,6 +33,7 @@ export const erasContent = [
     ...baseFields
   },
   {
+    background: `${baseMediaPanelsUrl}1900s.png`,
     title: '1900s',
     eraData: 'nineteenBreakdown',
     subTitle: '',
@@ -37,11 +42,12 @@ export const erasContent = [
     ...baseFields
   },
   {
+    background: `${baseMediaPanelsUrl}Future.png`,
     title: 'Future',
     eraData: 'futureBreakdown',
     subTitle: '',
     bodyText: 'The Dinosaurs are a group of ancient, non-human dinosaurs that lived in the late Jurassic period of the Cretaceous period. They were the first group of animals to exist in the world.',
-    date: 'Future',
+    date: '2020s and Beyond',
     ...baseFields
   },
 ];
