@@ -5,9 +5,9 @@ import bitesizeLogo from '../productLogos/bitesize.svg';
 
 const baseFields = {
   icon: '',
-  iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
+  iconStyle: { background: '#fff', color: '#eee' },
   contentStyle: { background: '#000', color: '#fff', margin: '0 0 4em 4em' },
-  contentArrowStyle: { borderRight: '7px solid  #000' },
+  contentArrowStyle: { borderRight: '7px solid  #fff' },
 }
 
 const baseMediaPanelsUrl = 'https://d3dqcjzalk876k.cloudfront.net/eraPanels/';

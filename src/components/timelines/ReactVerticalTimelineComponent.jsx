@@ -67,9 +67,12 @@ export default function ReactVerticalTimelineComponent(props) {
         <button onClick={() => clickHandler('', true)}>{'<'}</button>
         <h2>{era}</h2>
       </div>}
-    <VerticalTimeline lineColor="#000" animate layout="1-column-left">
-      {generateTimelineBlocks(inputData, type, clickHandler, modalState, modalHandler)}
-    </VerticalTimeline>
+      <div style={{background: '#000'}}>
+        <VerticalTimeline lineColor="#eee" animate layout="1-column-left">
+        {generateTimelineBlocks(inputData, type, clickHandler, modalState, modalHandler)}
+      </VerticalTimeline>
+
+      </div>
     </>
   );
 }
