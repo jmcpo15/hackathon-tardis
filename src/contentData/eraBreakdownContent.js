@@ -14,6 +14,8 @@ const baseFields = {
 const contentImageBaseUrl = 'https://d3dqcjzalk876k.cloudfront.net/content-images/'
 const videoBaseUrl = 'https://d3dqcjzalk876k.cloudfront.net/videos/'
 const imageBaseUrl = 'https://d3dqcjzalk876k.cloudfront.net/thumnails/'
+const mediaCardsBaseUrl = 'https://d3dqcjzalk876k.cloudfront.net/mediaCards/'
+
 // eslint-disable-next-line import/prefer-default-export
 export const prehistoricBreakdown = [
   {
@@ -93,67 +95,69 @@ export const nineteenBreakdown = [
     title: '1960s',
     mediaBlocksData: [
       {
-        background: '',
-        category: 'news',
+        background: `${mediaCardsBaseUrl}60s-2.png`,
+        category: 'bitesize',
         productLogo: newsLogo,
         title: 'Delia Derbyshire – Doctor Who Theme',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-doctor-who-theme-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}NineteenHundreds-breakdown-doctor-who-theme-s.png`
+        image: `${imageBaseUrl}sixties-breakdown-doctor-who-theme-thumb.jpg`,
+        contentUrl:`${contentImageBaseUrl}sixties-breakdown-doctor-who-theme-w.png`
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}60s-3.png`,
         category: 'sounds',
         productLogo: soundsLogo,
         title: 'Sounds of the 60s with Tony Blackburn',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-tony-blackburn-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}NineteenHundreds-breakdown-tony-blackburn-s.png`
+        image: `${imageBaseUrl}sixties-breakdown-tony-blackburn-thumb.jpg`,
+        contentUrl:`${contentImageBaseUrl}sixties-breakdown-tony-blackburn-s.png`
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}60s-4.png`,
         category: 'iplayer',
         productLogo: iplayerLogo,
         title: 'The Rolling Stones at the BBC',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-rolling-stones-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}NineteenHundreds-breakdown-rolling-stones-i.png`
+        image: `${imageBaseUrl}sixties-breakdown-rolling-stones-thumb.jpg`,
+        contentUrl:`${contentImageBaseUrl}sixties-breakdown-rolling-stones-i.png`
 
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}60s-5.png`,
         category: 'news',
         productLogo: newsLogo,
         title: 'England in 1966',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-england-1966-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}NineteenHundreds-breakdown-england-1966s-n.png`
+        image: `${imageBaseUrl}sixties-breakdown-england-1966-thumb.jpg`,
+        contentUrl:`${contentImageBaseUrl}sixties-breakdown-england-1966-n.png`
 
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}ctm.png`,
         category: 'iplayer',
         productLogo: iplayerLogo,
         title: 'Call the Midwife',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-call-the-midwife-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}NineteenHundreds-breakdown-call-the-midwife-i.png`,
-        videoUrl:`${videoBaseUrl}NineteenHundreds-breakdown-call-the-midwife.mp4`
+        image: `${imageBaseUrl}sixties-breakdown-call-the-midwife-thumb.jpg`,
+        contentUrl:`${contentImageBaseUrl}sixties-breakdown-call-the-midwife-i.png`,
+        videoUrl:`${videoBaseUrl}sixties-breakdown-call-the-midwife.mp4`
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}60s-6.png`,
         category: 'sounds',
         productLogo: soundsLogo,
         title: 'The World Festival of Black Arts',
-        image: `${imageBaseUrl}NineteenHundreds-breakdown-world-festival-black-arts-thumb.jpg`,
+        image: `${imageBaseUrl}sixties-breakdown-world-festival-black-arts-thumb.jpg`,
+        contentUrl: `${contentImageBaseUrl}sixties-breakdown-world-festival-black-arts-s.png`,
+
       },
       {
-        background: '',
-        category: 'news',
+        background: `${mediaCardsBaseUrl}60s-7.png`,
+        category: 'iplayer',
         productLogo: newsLogo,
         title: "Tomorrow's World - Laser Eye Surgery",
         image: ''
       },
       {
-        background: '',
-        category: 'news',
+        background: `${mediaCardsBaseUrl}60s-8.png`,
+        category: 'iplayer',
         productLogo: newsLogo,
-        title: 'content...',
+        title: '1967: Colour television',
         image: ''
       }
     ],
@@ -163,61 +167,29 @@ export const nineteenBreakdown = [
     title: '1970s',
     mediaBlocksData: [
       {
-        background: '',
-        category: 'sounds',
-        productLogo: soundsLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'bitesize',
-        productLogo: bitesizeLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
+        background: `${mediaCardsBaseUrl}70s-1.png`,
         category: 'iplayer',
-        productLogo: iplayerLogo,
         title: 'content...',
         image: ''
       },
       {
-        background: '',
-        category: 'news',
-        productLogo: newsLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'sounds',
-        productLogo: soundsLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'bitesize',
-        productLogo: bitesizeLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
+        background: `${mediaCardsBaseUrl}70s-2.png`,
         category: 'iplayer',
-        productLogo: iplayerLogo,
         title: 'content...',
         image: ''
       },
       {
-        background: '',
-        category: 'news',
-        productLogo: newsLogo,
+        background: `${mediaCardsBaseUrl}70s-3.png`,
+        category: 'bitesize',
         title: 'content...',
         image: ''
-      }
+      },
+      {
+        background: `${mediaCardsBaseUrl}70s-4.png`,
+        category: 'sounds',
+        title: 'content...',
+        image: ''
+      },
     ],
     ...baseFields
   },
@@ -225,58 +197,50 @@ export const nineteenBreakdown = [
     title: '1980s',
     mediaBlocksData: [
       {
-        background: '',
-        category: 'sounds',
-        productLogo: soundsLogo,
+        background: `${mediaCardsBaseUrl}80s-1.png`,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
-        background: '',
+        background: `${mediaCardsBaseUrl}80s-2.png`,
+        category: 'iplayer',
+        title: 'content...',
+        image: ''
+      },
+      {
+        background: `${mediaCardsBaseUrl}80s-3.png`,
         category: 'bitesize',
-        productLogo: bitesizeLogo,
+        title: 'content...',
+        image: ''
+      },
+      {
+        background: `${mediaCardsBaseUrl}80s-4.png`,
+        category: 'sounds',
+        title: 'content...',
+        image: ''
+      },
+      {
+        background: `${mediaCardsBaseUrl}60s-9.png`,
+        category: 'bitesize',
+        title: 'content...',
+        image: ''
+      },
+      {
+        background: `${mediaCardsBaseUrl}70s-2.png`,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         category: 'iplayer',
-        productLogo: iplayerLogo,
         title: 'content...',
         image: ''
       },
       {
         background: '',
         category: 'news',
-        productLogo: newsLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'sounds',
-        productLogo: soundsLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'bitesize',
-        productLogo: bitesizeLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'iplayer',
-        productLogo: iplayerLogo,
-        title: 'content...',
-        image: ''
-      },
-      {
-        background: '',
-        category: 'news',
-        productLogo: newsLogo,
         title: 'content...',
         image: ''
       }

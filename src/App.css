@@ -64,7 +64,6 @@
 .middleBody {
   flex-grow: 2.25;
   min-height: 1080px;
-
 }
 
 .eraTitle {
@@ -120,6 +119,12 @@
   /* margin: 1rem;
   display: inline-block; */
 }
+
+.mediaCard:hover {
+    /* animation-name: bounce; */
+    /* transform: scale(1.1); */
+    transform: translateY(-20px);
+  }
 
 .cardLogo {
   padding: 1rem;
