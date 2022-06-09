@@ -6,16 +6,20 @@ const generateMediaCards = (mediaCards, modalState, clickHandler) => mediaCards.
   <div
     key={`${index + 5}-${card.title}`}
     className="mediaCard bounceAnim"
-    style={{animationDelay: `${index / 10}s`, animationDuration: '1s'}}
+    style={{animationDelay: `${index / 10}s`, animationDuration: '1s', backgroundImage: `url(${card.background})`, backgroundSize: '100% 100%'}}
     image={card.image}
     onClick={() => clickHandler(true, {videoUrl: card?.videoUrl || null, contentUrl: card?.contentUrl || null})}
   >
-    <h3 className="">{card.title}</h3>
-    <h4 className="">{card.subTitle}</h4>
-    <div className='cardLogo'>{card.productLogo ? Logo(card.productLogo) : ''}</div>
-    <p className='bodyText'>
-      {card.bodyText}
-    </p>
+    { !card.background && 
+    <div>
+      <h3 className="">{card.title}</h3>
+      <h4 className="">{card.subTitle}</h4>
+      <div className='cardLogo'>{card.productLogo ? Logo(card.productLogo) : ''}</div>
+      <p>
+        {card.bodyText}
+      </p>
+    </div>
+    }
   </div>
 ));
 
