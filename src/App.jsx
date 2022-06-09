@@ -102,7 +102,7 @@ function App() {
           {
             modalContent.contentUrl &&
               <div className='contentLink'>
-                <a href={`${modalContent.contentLink}`} target="_blank" rel="noreferrer">Go to content {modalContent.contentLink}</a>
+                <img src={`${modalContent.contentUrl}`} />
               </div>
           }
 

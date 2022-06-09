@@ -10,6 +10,8 @@ const baseFields = {
   contentArrowStyle: { borderRight: '7px solid  #eee' },
 }
 
+const baseUrl = 'https://d3dqcjzalk876k.cloudfront.net/';
+
 // eslint-disable-next-line import/prefer-default-export
 export const dinosaursBreakdown = [
   {
@@ -26,7 +28,7 @@ export const dinosaursBreakdown = [
         productLogo: bitesizeLogo,
         title: 'content...',
         image: '',
-        contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
+        contentUrl: `${baseUrl}content-images/dinosaur-breakdown-deadly-dinosaurs-i.png`
       },
       {
         background: '',
