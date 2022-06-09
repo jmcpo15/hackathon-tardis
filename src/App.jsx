@@ -3,7 +3,7 @@ import React from 'react';
 // import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
 // import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactPlayer from 'react-player';
 import Modal from "./components/modal/Modal";
