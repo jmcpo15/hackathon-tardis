@@ -9,11 +9,13 @@ import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 import './App.css';
 import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
 import { erasContent } from './contentData/erasContent';
-import {dinosaursBreakdown, sixtysBreakdown} from './contentData/eraBreakdownContent'
+import { prehistoricBreakdown, eighteenBreakdown, nineteenBreakdown, futureBreakdown } from './contentData/eraBreakdownContent'
 
 const eraBreakdowns = {
-  'The Dinosaurs': dinosaursBreakdown,
-  'Sixtys': sixtysBreakdown
+  'Prehistoric': prehistoricBreakdown,
+  '1800s': eighteenBreakdown,
+  '1900s': nineteenBreakdown,
+  'Future': futureBreakdown
 }
 
 function TimelineWrapper(props) {
