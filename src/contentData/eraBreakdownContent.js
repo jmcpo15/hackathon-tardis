@@ -6,7 +6,7 @@ import bitesizeLogo from '../productLogos/bitesize.svg';
 const baseFields = {
   icon: '',
   iconStyle: { background: 'rgb(0, 0, 0)', color: '#eee' },
-  contentStyle: { background: '#fff', color: '#000' },
+  contentStyle: { background: 'transparent', color: '#fff' },
   contentArrowStyle: { borderRight: '7px solid  #eee' },
 }
 
