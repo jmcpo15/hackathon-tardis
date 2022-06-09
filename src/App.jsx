@@ -1,10 +1,11 @@
+
+// import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
+// import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 /* eslint-disable max-len */
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactPlayer from 'react-player';
 import Modal from "./components/modal/Modal";
-import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
-import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 // import logo from './logo.svg';
 import './App.css';
 import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
@@ -21,7 +22,7 @@ const eraBreakdowns = {
 function TimelineWrapper(props) {
   const { type, era, clickHandler, modalState, modalHandler, category } = props;
   if (type === 'eras') {
-    return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
+    return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler}/>);
   }
   if (type === 'eraBreakdown') {
     const filteredEraBreakdowns = JSON.parse(JSON.stringify(eraBreakdowns));
@@ -69,13 +70,7 @@ function App() {
         <div className="wrapper">
           <div className="sideHeader" />
           <div className="middleHeader">
-            <NavigationHeader
-              leftChildren={[
-                <div className={navigationHeaderItemClass} href="#" mdxType="a" originalType="a"><div mdxType="span" originalType="span">T.A.R.D.I.S.</div></div>,
-              ]}
-              rightChildren={[
-              ]}
-            />
+            <h1>Navigation bar would be here....</h1>
           </div>
           <div className="sideHeader" />
         </div>
@@ -91,11 +86,13 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
+          <div id="filterButtons" className="filterButtons">
             <button id="none" onClick={() => setCategory("none")}>all</button>
             <button id="news" onClick={() => setCategory("news")}>news</button>
             <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
             <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
             <button id="iplayer"onClick={() => setCategory("iplayer")} >iplayer</button>
+          </div>
             <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category} />
         </div>
         <div className="sideBody" />
