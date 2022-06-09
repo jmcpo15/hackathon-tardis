@@ -9,7 +9,7 @@ import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 import './App.css';
 import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
 import { erasContent } from './contentData/erasContent';
-import {prehistoricBreakdown, eighteenBreakdown, nineteenBreakdown, futureBreakdown} from './contentData/eraBreakdownContent'
+import { prehistoricBreakdown, eighteenBreakdown, nineteenBreakdown, futureBreakdown } from './contentData/eraBreakdownContent'
 
 const eraBreakdowns = {
   'Prehistoric': prehistoricBreakdown,

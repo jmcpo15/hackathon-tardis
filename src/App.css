@@ -81,7 +81,29 @@
 .eraTitle > button {
   margin: 0 1rem 0 0;
   height: 3rem;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  font-size: 2em;
 }
+
+  /* background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  border: none;
+  float: right;
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 4;
+  margin: 0.5rem;
+  height: auto;
+  width: auto;
+  border-radius: 3px; */
+/* } */
+
+
 
 .eraTitle > h2 {
   margin: 1rem 1rem 0 0;
