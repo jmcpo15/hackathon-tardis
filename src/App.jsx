@@ -10,11 +10,13 @@ import Modal from "./components/modal/Modal";
 import './App.css';
 import ReactVerticalTimelineComponent from './components/timelines/ReactVerticalTimelineComponent';
 import { erasContent } from './contentData/erasContent';
-import {dinosaursBreakdown, sixtysBreakdown} from './contentData/eraBreakdownContent'
+import { prehistoricBreakdown, eighteenBreakdown, nineteenBreakdown, futureBreakdown } from './contentData/eraBreakdownContent'
 
 const eraBreakdowns = {
-  'The Dinosaurs': dinosaursBreakdown,
-  'Sixtys': sixtysBreakdown
+  'Prehistoric': prehistoricBreakdown,
+  '1800s': eighteenBreakdown,
+  '1900s': nineteenBreakdown,
+  'Future': futureBreakdown
 }
 
 function TimelineWrapper(props) {
@@ -23,12 +25,11 @@ function TimelineWrapper(props) {
     return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler}/>);
   }
   if (type === 'eraBreakdown') {
-    console.log(category)
-    const filterdEraBreakdowns = JSON.parse(JSON.stringify(eraBreakdowns));
+    const filteredEraBreakdowns = JSON.parse(JSON.stringify(eraBreakdowns));
     if (category !== "none") {
-      filterdEraBreakdowns[era].map((e) => e.mediaBlocksData = e.mediaBlocksData.filter(m => m.category === category));
+      filteredEraBreakdowns[era].map((e) => e.mediaBlocksData = e.mediaBlocksData.filter(m => m.category === category));
     }
-    return (<ReactVerticalTimelineComponent inputData={filterdEraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
+    return (<ReactVerticalTimelineComponent inputData={filteredEraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
   }
   return <> </>;
 }
@@ -45,11 +46,10 @@ TimelineWrapper.propTypes = {
 
 function App() {
   const [currentType, setCurrentType] = useState('eras');
-  const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
+  const [selectedEra, setSelectedEra] = useState('Prehistoric');
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('no modal content');
   const [category, setCategory] = useState('none')
-
 
   const modalHandler = (newModalState, newModalContent) => {
     setModalContent(newModalContent);
@@ -57,13 +57,13 @@ function App() {
   };
 
   const handleClick = (era, back) => {
-    if (currentType === 'eras') { 
+    if (currentType === 'eras') {
       setCurrentType('eraBreakdown')
       setSelectedEra(era)
     };
     if (currentType === 'eraBreakdown' || back) setCurrentType('eras');
   };
-  
+
   return (
     <div className="App">
       <header role="banner">
@@ -86,12 +86,14 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
+          <div id="filterButtons" className="filterButtons">
             <button id="none" onClick={() => setCategory("none")}>all</button>
             <button id="news" onClick={() => setCategory("news")}>news</button>
             <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
             <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
             <button id="iplayer"onClick={() => setCategory("iplayer")} >iplayer</button>
-            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category}/>
+          </div>
+            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category} />
         </div>
         <div className="sideBody" />
       </div>
@@ -110,7 +112,7 @@ function App() {
           {
             modalContent.contentUrl &&
               <div className='contentLink'>
-                <img src={`${modalContent.contentUrl}`} />
+                <a href={`${modalContent.contentLink}`} target="_blank" rel="noreferrer">Go to content {modalContent.contentLink}</a>
               </div>
           }
 
