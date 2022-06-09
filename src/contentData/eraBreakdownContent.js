@@ -20,6 +20,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'In Our Time',
         subTitle: 'Feathered Dinosaurs',
         bodyText: 'Dinosaurs were originally thought to be related to lizards - the word \'dinosaur\' was created from the Greek for \'terrible lizard\' - but that now appears false. In the last century, discoveries of fossils with feathers established that at least some dinosaurs were feathered and that some of those survived the great extinctions and evolved into the birds we see today.',
@@ -29,6 +30,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'Dinosaurs the final day with David Attenborough',
         bodyText: 'David Attenborough reveals the last day of the dinosaurs in astonishing detail, with new evidence from a prehistoric graveyard dating to the day an asteroid devastated our planet.',
         image: '',
@@ -37,6 +39,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'Dinosaurs the final day with David Attenborough - QUIZ',
         image: '',
         contentUrl: 'https://www.bbc.co.uk/bitesize/articles/zvytp4j',
@@ -50,6 +53,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'Deadly Dinosaurs',
         bodyText: 'Steve Backshall discovers the deadliest animals that ever walked the earth, the dinosaurs.',
         image: '',
@@ -58,6 +62,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'In Our Time',
         subTitle: 'The KT Boundary.',
         bodyText: 'But exactly what did happen 65 million years ago? How was this extraordinary line created across the Earth and does it really hold the key to the death of the dinosaurs?',
@@ -67,6 +72,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: '',
         contentUrl: `${baseUrl}content-images/dinosaur-breakdown-deadly-dinosaurs-i.png`
@@ -74,6 +80,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -81,12 +88,14 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       }
@@ -99,6 +108,7 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'Attenborough and the Giant Dinosaur',
         bodyText: 'David Attenborough tells the story of the discovery and reconstruction in Argentina of the world\'s largest-known dinosaur, a brand new species of titanosaur. ',
         image: '',
@@ -107,12 +117,14 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -120,30 +132,35 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -156,48 +173,56 @@ export const prehistoricBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -219,48 +244,56 @@ export const nineteenBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -273,48 +306,56 @@ export const nineteenBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -327,48 +368,56 @@ export const nineteenBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -381,48 +430,56 @@ export const nineteenBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -435,48 +492,56 @@ export const nineteenBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -493,48 +558,56 @@ export const futureBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -547,48 +620,56 @@ export const futureBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -601,48 +682,56 @@ export const futureBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -655,48 +744,56 @@ export const futureBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -709,48 +806,56 @@ export const futureBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
