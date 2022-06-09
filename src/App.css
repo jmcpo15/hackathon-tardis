@@ -257,3 +257,23 @@
   max-height: 70%;
   max-width: 70%;
 }
+
+.filterButtons > button {
+  background-color: #03237d;
+  /* border-color: #bb1919; */
+  white-space: nowrap;
+  display: inline-block;
+  padding: 10px;
+  margin: 0.25em;
+  text-align: center;
+  color: #fff;
+  /* border-top-color: rgb(3, 35, 125); */
+  /* border-top-color: #fff;
+  border-right-color: rgb(3, 35, 125);
+  border-bottom-color: rgb(3, 35, 125);
+  border-left-color: rgb(3, 35, 125); */
+  transition: border-color 0.2s, background-color 0.2s ease;
+  font-size: 1em;
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+}
+

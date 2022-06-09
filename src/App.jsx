@@ -91,12 +91,14 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
-            <button id="none" onClick={() => setCategory("none")}>all</button>
-            <button id="news" onClick={() => setCategory("news")}>news</button>
-            <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
-            <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
-            <button id="iplayer" onClick={() => setCategory("iplayer")} >iplayer</button>
-            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category} />
+            <div class="filterButtons">
+              <button id="none" onClick={() => setCategory("none")}>all</button>
+              <button id="news" onClick={() => setCategory("news")}>news</button>
+              <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
+              <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
+              <button id="iplayer" onClick={() => setCategory("iplayer")} >iplayer</button>
+              <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category} />
+            </div>
         </div>
         <div className="sideBody" />
       </div>
