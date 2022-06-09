@@ -1,5 +1,4 @@
 
-import React from 'react';
 // import NavigationHeader, { navigationHeaderItemClass } from '@bbc/igm-navigation-header';
 // import '@bbc/igm-navigation-header/dist/NavigationHeader.css';
 /* eslint-disable max-len */
