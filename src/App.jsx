@@ -95,7 +95,7 @@ function App() {
             <button id="news" onClick={() => setCategory("news")}>news</button>
             <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
             <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
-            <button id="iplayer"onClick={() => setCategory("iplayer")} >iplayer</button>
+            <button id="iplayer" onClick={() => setCategory("iplayer")} >iplayer</button>
             <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category} />
         </div>
         <div className="sideBody" />
@@ -115,7 +115,7 @@ function App() {
           {
             modalContent.contentUrl &&
               <div className='contentLink'>
-                <a href={`${modalContent.contentLink}`} target="_blank" rel="noreferrer">Go to content {modalContent.contentLink}</a>
+                <img src={`${modalContent.contentUrl}`} />
               </div>
           }
 
