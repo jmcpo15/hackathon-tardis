@@ -19,12 +19,17 @@ const eraBreakdowns = {
 }
 
 function TimelineWrapper(props) {
-  const { type, era, clickHandler, modalState, modalHandler } = props;
+  const { type, era, clickHandler, modalState, modalHandler, category } = props;
   if (type === 'eras') {
-    return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
+    return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler}/>);
   }
   if (type === 'eraBreakdown') {
-    return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
+    console.log(category)
+    const filterdEraBreakdowns = JSON.parse(JSON.stringify(eraBreakdowns));
+    if (category !== "none") {
+      filterdEraBreakdowns[era].map((e) => e.mediaBlocksData = e.mediaBlocksData.filter(m => m.category === category));
+    }
+    return (<ReactVerticalTimelineComponent inputData={filterdEraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
   }
   return <> </>;
 }
@@ -36,6 +41,7 @@ TimelineWrapper.propTypes = {
   clickHandler: PropTypes.func.isRequired,
   modalState: PropTypes.bool.isRequired,
   modalHandler: PropTypes.func.isRequired,
+  category: PropTypes.string,
 };
 
 function App() {
@@ -43,6 +49,8 @@ function App() {
   const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('no modal content');
+  const [category, setCategory] = useState('none')
+
 
   const modalHandler = (newModalState, newModalContent) => {
     setModalContent(newModalContent);
@@ -79,7 +87,12 @@ function App() {
             BBC T.A.R.D.I.S. is a fun tool to discover BBC
             content about different key points in history!
           </p>
-            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} />
+            <button id="none" onClick={() => setCategory("none")}>all</button>
+            <button id="news" onClick={() => setCategory("news")}>news</button>
+            <button id="bitesize" onClick={() => setCategory("bitesize")}>bitesize</button>
+            <button id="sounds" onClick={() => setCategory("sounds")}>sounds</button>
+            <button id="iplayer"onClick={() => setCategory("iplayer")} >iplayer</button>
+            <TimelineWrapper type={currentType} era={selectedEra} clickHandler={handleClick} modalState={modalShow} modalHandler={modalHandler} category={category}/>
         </div>
         <div className="sideBody" />
       </div>

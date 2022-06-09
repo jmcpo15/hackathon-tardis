@@ -18,12 +18,14 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: '',
         contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
@@ -31,6 +33,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -38,18 +41,21 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: '',
         contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
@@ -57,6 +63,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -64,6 +71,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -76,12 +84,14 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: '',
         contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
@@ -89,6 +99,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -96,18 +107,21 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: '',
         contentUrl: 'https://www.bbc.co.uk/bitesize/articles/z6pv3k7'
@@ -115,6 +129,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -122,6 +137,7 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -134,18 +150,21 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: '',
         videoUrl: 'https://d3dqcjzalk876k.cloudfront.net/videos/Gentleman-Jack-OFFICIAL-TRAILER-BBC.mp4'
@@ -153,30 +172,35 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -189,48 +213,56 @@ export const dinosaursBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -246,48 +278,56 @@ export const sixtysBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -300,48 +340,56 @@ export const sixtysBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -354,48 +402,56 @@ export const sixtysBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -408,48 +464,56 @@ export const sixtysBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
@@ -462,48 +526,56 @@ export const sixtysBreakdown = [
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: soundsLogo,
+        category: 'sounds',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: bitesizeLogo,
+        category: 'bitesize',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: iplayerLogo,
+        category: 'iplayer',
         title: 'content...',
         image: ''
       },
       {
         background: '',
         productLogo: newsLogo,
+        category: 'news',
         title: 'content...',
         image: ''
       }
