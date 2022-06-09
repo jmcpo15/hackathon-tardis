@@ -134,7 +134,7 @@ export const nineteenBreakdown = [
         productLogo: iplayerLogo,
         title: 'Call the Midwife',
         image: `${imageBaseUrl}sixties-breakdown-call-the-midwife-thumb.jpg`,
-        contentUrl:`${contentImageBaseUrl}sixties-breakdown-call-the-midwife-i.png`,
+        // contentUrl:`${contentImageBaseUrl}sixties-breakdown-call-the-midwife-i.png`,
         videoUrl:`${videoBaseUrl}sixties-breakdown-call-the-midwife.mp4`
       },
       {
