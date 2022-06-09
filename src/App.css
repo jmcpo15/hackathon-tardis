@@ -203,6 +203,15 @@
 }
 
 .contentLink {
-  /* margin: 1rem; */
+  text-align: center;
+  /* max-height: 90%;
+  max-width: 90%; */
+  margin: auto;
   padding: 2rem;
+  background: black;
+}
+
+.contentLink > img {
+  max-height: 70%;
+  max-width: 70%;
 }
