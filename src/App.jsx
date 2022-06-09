@@ -24,6 +24,7 @@ function TimelineWrapper(props) {
     return (<ReactVerticalTimelineComponent inputData={erasContent} type={'era'} clickHandler={clickHandler} />);
   }
   if (type === 'eraBreakdown') {
+    console.log(era)
     return (<ReactVerticalTimelineComponent inputData={eraBreakdowns[era]} type={'eraBreakdown'} era={era} clickHandler={clickHandler}  modalState={modalState} modalHandler={modalHandler} />);
   }
   return <> </>;
@@ -40,7 +41,7 @@ TimelineWrapper.propTypes = {
 
 function App() {
   const [currentType, setCurrentType] = useState('eras');
-  const [selectedEra, setSelectedEra] = useState('The Dinosaurs');
+  const [selectedEra, setSelectedEra] = useState('Prehistoric');
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('no modal content');
 
